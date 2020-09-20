@@ -33,6 +33,9 @@ let map = L.map('mapid', {
     layers: [streets]
 })
 
+// Pass our map layers into our layers control and add the layers control to the map.
+L.control.layers(baseMaps).addTo(map);
+
   // Accessing the airport GeoJSON URL
   let airportData = "https://raw.githubusercontent.com/arkasozi/Mapping_Earthquakes/master/Mapping_GeoJSON_Points/static/js/majorAirports.json";
 
